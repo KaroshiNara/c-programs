@@ -1,0 +1,17 @@
+//This program is to show the entered value in reverse order.
+#include<stdio.h>
+//#include<conio.h>
+int main() {
+    int value,rev=0,rem;
+//  clrscr();
+    printf("Enter the Value ");
+    scanf("%d",&value);
+        while(value!=0) {
+        rem=value%10;
+        rev=rev*10+rem;
+        value=value/10;
+    }
+    printf("Your entered value becomed this %d",rev);
+//  getch();
+    return 0;
+}
